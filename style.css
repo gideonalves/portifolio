@@ -15,6 +15,10 @@
     --font-action: "Muli", serif; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .hambuguer {
     /* background-color: red; */
     width: 2rem;
@@ -181,6 +185,7 @@ header {
     top: 0;
     right: -20rem;
     transition: all 1s;
+    z-index: 150;
 }
 
 .show-menu .sidebar {
@@ -588,3 +593,52 @@ header {
     grid-column: 2;
 }
 
+
+footer{
+    width: 100%;
+    height: 7rem;
+    background-color: #17181b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-content p{
+    font-family: var(--font-secundary);
+    color: #a7a7a7;
+    font-size: 1.2rem;
+  }
+
+  
+.social-list a{
+    margin: 0 2rem;
+    color: #a7a7a7;
+    font-size: 1.3rem;
+  }
+  
+  .social-list ul {
+    display: flex;
+  }
+  
+  #link-topo{
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+    width: 3rem;
+    height: 3rem;
+    background-color:#1488CC;  
+    background: -webkit-linear-gradient(to right, #2B32B2, #1488CC); 
+    background: linear-gradient(to left, #2B32B2, #1488CC); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    border-radius: .3rem;
+    box-shadow:  0 0.1rem 0.6rem #00000009;
+  }
